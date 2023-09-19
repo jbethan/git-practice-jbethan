@@ -1,0 +1,131 @@
+    1  git --version
+   15  mkdir git_practice
+   16  cd git_practice
+   17  git init
+   23  rm -rf gitpractice/
+   25  rmdir git_practice/
+   26  rm gitpractice/* gitpractice/.*
+   27  rm git_practice/* git_practice/.*
+   28  cd git_practice
+   33  rmdir git_practice
+   34  rm -fr .git
+   35  rmdir git_practice
+   36  cd git_practice
+   37  rm -fr .git
+   41  rmdir git_practice
+   46  mkdir git_practice
+   47  cd git_practice
+   49  git init
+   51  git status
+   54  git status
+   55  git add file_1.txt
+   56  git add file_2.txt
+   57  git status
+   58  git commit -m "first commit"
+   59  git config --global user.email "jbethan@byu.edu"
+   60  git config --global user.name "Bethany Blake"
+   61  git commit -m "first commit"
+   62  git commit --amend
+   63  git status
+   68  git status
+   69  git log
+   73  git add file_1.txt
+   74  git add file_2.txt
+   78  git status
+   79  git add .
+   80  git status
+   81  git add file_1.txt
+   82  git add file_2.txt
+   83  git status
+   85  git log
+   86  rm -fr .git
+   92  rmdir git_practice
+   93  rm gitpractice/* gitpractice/.*
+   94  rm git_practice/* git_practice/.*
+   95  rmdir git_practice/
+   97  mkdir git_practice
+   98  cd git_practice
+   99  git init
+  101  git status
+  104  git status
+  105  git add file_1.txt
+  106  git add file_2.txt
+  107  git status
+  108  git commit -m "create new files"
+  109  git status
+  110  git log
+  121  cd git_practice/
+  130  git status
+  131  git add file_1.txt
+  132  git status
+  133  git commit -m "update file_1.txt"
+  134  git status
+  135  git add file_2.txt
+  136  git status
+  137  git commit -m "update file_2.txt"
+  138  git log
+  143  git add Readme.md
+  144  git commit -m "create Readme.md"
+  145  git status
+  146  git log
+  147  touch .gitignore
+  150  git log
+  151  vim .gitignore
+  152  git status
+  153  git add .gitignore
+  154  git status
+  155  git commit -m "create .gitignore"
+  157  git status
+  160  vim .gitignore
+  162  git status
+  164  git status
+  166  git add .
+  167  git status
+  168  git branch features
+  170  git switch features
+  171  git log
+  174  git add .
+  175  git commit -m "add empty file"
+  176  git status
+  179  git add .
+  180  git commit -m
+  181  git commit -m "update new_features"
+  182  git status
+  183  git branch
+  184  git switch master
+  188  git commit -a -m "update file_1"
+  189  git log
+  190  git merge features
+  191  git log
+  194  git commit -a -m "update new_features.txt"
+  195  git branch features
+  196  git switch featuers
+  197  git switch features
+  200  git commit -a -m "update new_features.txt"
+  201  git switch master
+  202  git merge features
+  204  git commit -a -m "resolve merge conflict new_features.txt"
+  205  git merge features
+  206  git branch -d features
+  207  git remote add origin git@github.com:jbethan/git-practice-jbethan.git
+  208  git log
+  209  git push -u origin main
+  210  git remote add origin git@github.com:jbethan/git-practice-jbethan.git
+  211  git push -u origin main
+  212  git push -u origin master
+  214  git push -u origin master
+  215  git push -u origin main
+  216  git push -u origin master
+  220  git clone git@github.com:jbethan/git_practice-Orion00.git
+  222  cd git_practice-Orion00/
+  226  git branch feature-jbethan
+  229  git switch feature
+  230  git switch feature-jbethan
+  234  git commit -a -m "add morejokes.txt"
+  235  git add .
+  236  git commit -m "add morejokes.txt"
+  237  git push origin feature-jbethan
+  240  cd git_practice
+  241  git pull
+  243  git log --oneline > gitlog.txt
+  244  history | grep git > history.txt

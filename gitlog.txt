@@ -1,0 +1,14 @@
+4c1f013 Merge pull request #1 from Orion00/master
+9823de6 Add jokes.txt with some starter jokes
+7f335e9 resolve merge conflict new_features.txt
+46a4c1c update new_features.txt
+4b176fb update new_features.txt
+2c5be6d Merge branch 'features'
+ec4a1b7 update file_1
+bb1a07c update new_features
+83fde6e add empty file
+bfc8001 create .gitignore
+387ad02 create Readme.md
+b3fcd4c update file_2.txt
+e640961 update file_1.txt
+49888f6 create new files

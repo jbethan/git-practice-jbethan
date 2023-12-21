@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.graph_objects as go
 import plotly.express as px
 
 st.set_page_config(page_title=None, layout="wide")
@@ -19,6 +18,14 @@ iso_df.head()
 df = df.merge(iso_df, how = "left", on=['Country Name'])
 
 # %%
+#st.subheader("Compare Obesity Rate for Specific Countries")
+#options = st.multiselect(
+#    'Select Countries',
+#    [''])
+
+
+
+
 view = st.radio(
     "Select View",
     ["World", "Africa", "Asia", "Europe", "North America", "South America"])

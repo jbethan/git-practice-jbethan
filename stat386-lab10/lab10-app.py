@@ -8,7 +8,7 @@ st.set_page_config(page_title=None, layout="wide")
 st.header("Obesity Rate Among Developed Countries")
 st.markdown('Use the interactive graphs below to explore data by country.')
 # %%
-df = pd.read_csv('2023_obesity_by_country.csv', index_col=None)
+df = pd.read_csv('https://raw.githubusercontent.com/jbethan/git-practice-jbethan/master/stat386-lab10/2023_obesity_by_country.csv', index_col=None)
 df = df.drop(df.columns[0], axis=1)
 df.head()
 

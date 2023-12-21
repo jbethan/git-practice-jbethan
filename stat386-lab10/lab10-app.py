@@ -18,13 +18,13 @@ iso_df.head()
 df = df.merge(iso_df, how = "left", on=['Country Name'])
 
 # %%
-#st.subheader("Compare Obesity Rate for Specific Countries")
-#options = st.multiselect(
-#    'Select Countries',
-#    [''])
-
-
-
+st.subheader("Compare Obesity Rate for Specific Countries")
+option = st.multiselect(
+    'Select Countries',
+    [df['County Name']])
+country_data = df.loc[df['Country Name']==option, ['Country Name','Obesity rate (%)']]
+country_data.reset_index(drop=True)
+st.table(country_data)
 
 view = st.radio(
     "Select View",

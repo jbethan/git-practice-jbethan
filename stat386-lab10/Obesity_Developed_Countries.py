@@ -62,7 +62,7 @@ df2[df2["Countries"]== "China"]
 # %%
 df2[df2["Obesity rate (%)"] < 10]
 # %%
-df2.head()
+df2
 # %%
 df2.to_csv('2023_obesity_by_country.csv')
 # %%

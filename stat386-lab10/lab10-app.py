@@ -40,7 +40,7 @@ if view == "Africa":
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo",
-                    range_color = [0,60],       
+                    range_color = [0,55],       
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )
@@ -53,7 +53,7 @@ elif view == "Asia":
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo",  
-                    range_color = [0,60],       
+                    range_color = [0,55],       
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )
@@ -66,7 +66,7 @@ elif view == "Europe":
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo", 
-                    range_color = [0,60],                            
+                    range_color = [0,55],                            
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )
@@ -79,7 +79,7 @@ elif view == 'North America':
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo",
-                    range_color = [0,60],       
+                    range_color = [0,55],       
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )
@@ -92,7 +92,7 @@ elif view == "South America":
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo",
-                    range_color = [0,60],       
+                    range_color = [0,55],       
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )
@@ -105,7 +105,7 @@ else:
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo", 
-                    range_color = [0,60],      
+                    range_color = [0,55],      
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )

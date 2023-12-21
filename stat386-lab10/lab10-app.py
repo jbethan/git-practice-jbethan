@@ -27,11 +27,11 @@ st.table(country_data)
 # %%
 col1, col2 = st.columns([3, 1])
 
-col2.subheader("")
-col2.subheader("")
-col2.subheader("")
+col1.header("")
+col1.subheader("")
+col1.subheader("")
 
-view = col2.radio(
+view = col1.radio(
     "Select View",
     ["World", "Africa", "Asia", "Europe", "North America", "South America"])
 
@@ -120,5 +120,5 @@ else:
                     )
     fig1.update_layout(width=800)
 
-col1.plotly_chart(fig1)
+col2.plotly_chart(fig1)
 # %%

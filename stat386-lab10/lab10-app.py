@@ -25,8 +25,9 @@ st.table(country_data)
 
 
 # %%
-col1, col2 = st.columns([3, 1])
+col1, col2 = st.columns([2, 1])
 
+col2.subheader("")
 col2.subheader("")
 view = col2.radio(
     "Select View",

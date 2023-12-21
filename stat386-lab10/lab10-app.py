@@ -20,14 +20,9 @@ df = df.merge(iso_df, how = "left", on=['Country Name'])
 # %%
 st.subheader("Compare Obesity Rate for Specific Countries")
 option = st.multiselect('Select Countries', pd.Series(df.iloc[:,0]))
-country_data = df.loc[df['Country Name']==option, ['Country Name','Obesity rate (%)']]
-country_data.reset_index(drop=True)
-country_data
-
-#%%
-
-# %%
-st.table(country_data)
+#country_data = df.loc[df['Country Name']==option, ['Country Name','Obesity rate (%)']]
+#st.table(country_data)
+st.write(option)
 
 # %%
 col1, col2 = st.columns([3, 1])

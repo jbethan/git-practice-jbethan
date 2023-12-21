@@ -25,10 +25,12 @@ st.table(country_data)
 
 
 # %%
-col1, col2 = st.columns([2, 1])
+col1, col2 = st.columns([3, 1])
 
 col2.subheader("")
 col2.subheader("")
+col2.subheader("")
+
 view = col2.radio(
     "Select View",
     ["World", "Africa", "Asia", "Europe", "North America", "South America"])
@@ -42,11 +44,11 @@ if view == "Africa":
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo",
-                    range_color = [0,55],       
+                    range_color = [0,50],       
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )
-    fig1.update_layout(width=1000)
+    fig1.update_layout(width=800)
 
 elif view == "Asia":
     fig1 = px.choropleth(df, 
@@ -56,11 +58,11 @@ elif view == "Asia":
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo",  
-                    range_color = [0,55],       
+                    range_color = [0,50],       
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )
-    fig1.update_layout(width=1000)
+    fig1.update_layout(width=800)
 
 elif view == "Europe": 
     fig1 = px.choropleth(df, 
@@ -70,11 +72,11 @@ elif view == "Europe":
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo", 
-                    range_color = [0,55],                            
+                    range_color = [0,50],                            
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )
-    fig1.update_layout(width=1000)
+    fig1.update_layout(width=800)
 
 elif view == 'North America':
     fig1 = px.choropleth(df, 
@@ -84,11 +86,11 @@ elif view == 'North America':
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo",
-                    range_color = [0,55],       
+                    range_color = [0,50],       
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )
-    fig1.update_layout(width=1000)
+    fig1.update_layout(width=800)
 
 elif view == "South America": 
     fig1 = px.choropleth(df, 
@@ -98,11 +100,11 @@ elif view == "South America":
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo",
-                    range_color = [0,55],       
+                    range_color = [0,50],       
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )
-    fig1.update_layout(width=1000)
+    fig1.update_layout(width=800)
 
 else:
     fig1 = px.choropleth(df, 
@@ -112,11 +114,11 @@ else:
                     color='Obesity rate (%)',
                     title='Obesity Rate by Country',
                     color_continuous_scale="turbo", 
-                    range_color = [0,55],      
+                    range_color = [0,50],      
                     hover_name = 'Country Name',
                     hover_data = ['Obesity rate (%)']
                     )
-    fig1.update_layout(width=1000)
+    fig1.update_layout(width=800)
 
 col1.plotly_chart(fig1)
 # %%

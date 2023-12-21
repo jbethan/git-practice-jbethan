@@ -25,7 +25,9 @@ df = df.merge(iso_df, how = "left", on=['Country Name'])
 #country_data.reset_index(drop=True)
 #st.table(country_data)
 
-view = st.radio(
+col1, col2 = st.columns([3, 1])
+
+view = col2.radio(
     "Select View",
     ["World", "Africa", "Asia", "Europe", "North America", "South America"])
 
@@ -102,5 +104,5 @@ else:
                     hover_data = ['Obesity rate (%)']
                     )
 
-st.plotly_chart(fig1)
+col1.plotly_chart(fig1)
 # %%

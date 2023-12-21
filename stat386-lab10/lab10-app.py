@@ -13,7 +13,7 @@ df = df.drop(df.columns[0], axis=1)
 df.head()
 
 # %%
-iso_df = pd.read_csv('iso_alpha3_codes.csv', index_col=None)
+iso_df = pd.read_csv('https://raw.githubusercontent.com/jbethan/git-practice-jbethan/master/stat386-lab10/iso_alpha3_codes.csv', index_col=None)
 iso_df.head()
 df = df.merge(iso_df, how = "left", on=['Country Name'])
 
